@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 
-function Search({ updateSearch }) {
-
-  const [search, setSearch] = useState("")
+function Search({ search, setSearch }) {
 
   function handleSearch(e) {
     setSearch(e.target.value)
-    updateSearch(e.target.value)
+
   }
 
   return (
